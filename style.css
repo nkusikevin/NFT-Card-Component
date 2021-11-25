@@ -1,11 +1,3 @@
-.attribution {
-	font-size: 11px;
-	text-align: center;
-}
-.attribution a {
-	color: hsl(228, 45%, 44%);
-}
-
 :root {
 	/* ### Primary */
 
@@ -26,6 +18,36 @@
 	box-sizing: border-box;
 }
 
+.attribution {
+	color: var(--yan);
+	font-size: 15px;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+.attribution a {
+	color: var(--yan);
+}
+
 body {
 	background-color: var(--very-dark-blue-main-bg);
+	position: relative;
+}
+
+/* .......Card.......... */
+
+.card {
+	display: flex;
+	align-items: center;
+	background-color: var(--very-dark-blue-card-bg);
+	justify-content: center;
+	flex-direction: column;
+	width: 330px;
+	height: 200px;
+}
+
+.card-top img {
+	width: 100%;
 }
