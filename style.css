@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200&family=Signika+Negative&display=swap");
 :root {
 	/* ### Primary */
 
@@ -34,20 +35,88 @@
 body {
 	background-color: var(--very-dark-blue-main-bg);
 	position: relative;
+	font-family: "Outfit", sans-serif;
+	font-family: "Signika Negative", sans-serif;
 }
 
 /* .......Card.......... */
 
 .card {
+	position: absolute;
+	top: 30px;
+	right: 0;
+	left: 0;
 	display: flex;
 	align-items: center;
 	background-color: var(--very-dark-blue-card-bg);
 	justify-content: center;
 	flex-direction: column;
+	border-radius: 10px;
+	padding: 2rem;
+	margin: 0 auto;
 	width: 330px;
-	height: 200px;
+	height: 555px;
+}
+hr {
+	height: 1px;
+	border: none;
+	background-color: var(--very-dark-blue-line);
+}
+.card-top img {
+	object-fit: cover;
+	width: 100%;
+	height: auto;
+	border-radius: 5px;
 }
 
-.card-top img {
-	width: 100%;
+/* .......First content.......... */
+
+.card-content > h2 {
+	color: white;
+	font-size: 25px;
+	line-height: 2;
+}
+
+.card-content > p {
+	color: var(--soft-blue);
+	font-size: 17px;
+}
+/* ...........Price................... */
+
+.card-price {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	margin: 1rem 0;
+}
+.card-price .price-left {
+	color: var(--yan);
+}
+
+.card-price .price-right {
+	color: var(--soft-blue);
+}
+
+/* card-owner */
+
+.card-owner {
+	display: flex;
+	align-items: center;
+	margin-top: 1rem;
+}
+.card-owner img {
+	width: 20%;
+	border-radius: 50%;
+	border: 1px solid wheat;
+	margin-right: 1rem;
+}
+
+.card-owner p {
+	color: var(--soft-blue);
+	font-size: 15px;
+}
+
+.card-owner p span {
+	color: white;
 }
